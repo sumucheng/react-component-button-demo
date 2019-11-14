@@ -1,0 +1,32 @@
+.xButton {
+  background: #fff;
+  border: 1px solid rgba(153, 153, 153, 1);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.dot {
+  background: rgba(153, 153, 153, 0.05);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  position: absolute;
+  animation: 1s x forwards;
+  z-index: 0;
+}
+.value {
+  position: relative;
+  z-index: 1;
+}
+@keyframes x {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(20);
+  }
+}
